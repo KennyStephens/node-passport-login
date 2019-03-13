@@ -11,4 +11,9 @@ router.get('/register', (req, res) => {
     res.render('register');
 });
 
+// Register Handler
+router.post('/register', (req, res) => {
+   const { name, email, password, password2 } = req.body;
+});
+
 module.exports = router;
